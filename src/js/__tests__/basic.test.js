@@ -64,8 +64,7 @@ test.each([
     "defence": 10
   }],
 
-])
-  ('check new object %s', (name, MyObj, params, state) => {
+])('check new object %s', (name, MyObj, params, state) => {
     const obj = new MyObj(...params);
 
     expect(obj.name).toBe(state.name);
